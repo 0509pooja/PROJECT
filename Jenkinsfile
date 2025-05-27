@@ -1,12 +1,12 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE = "<your-dockerhub-username>/web-app"
+        DOCKER_IMAGE = "pooja781/web-app"
     }
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-repo/simple-k8s-jenkins-project'
+                git 'https://github.com/0509pooja/PROJECT'
             }
         }
 
